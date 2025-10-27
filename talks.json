@@ -1,0 +1,44 @@
+[
+    {
+        "title": "The Future of AI in Business",
+        "speakers": ["Dr. Priya Sharma"],
+        "categories": ["AI", "Business Intelligence"],
+        "duration": 60,
+        "description": "Explore how artificial intelligence is reshaping business strategies, decision-making, and operational efficiency. This talk will cover current trends and future predictions."
+    },
+    {
+        "title": "Machine Learning for Predictive Analytics",
+        "speakers": ["Prof. Rohan Mehta", "Dr. Ananya Singh"],
+        "categories": ["ML", "Data Science"],
+        "duration": 60,
+        "description": "Dive into the world of predictive analytics using machine learning. Learn about various algorithms and their applications in forecasting and pattern recognition."
+    },
+    {
+        "title": "Data Visualization Best Practices",
+        "speakers": ["Ms. Kavya Reddy"],
+        "categories": ["Data Science", "Business Intelligence"],
+        "duration": 60,
+        "description": "Unlock the power of data through effective visualization. This session will cover principles, tools, and techniques to create compelling and informative data stories."
+    },
+    {
+        "title": "Ethical AI: Navigating Bias and Fairness",
+        "speakers": ["Dr. Vikram Patel"],
+        "categories": ["AI", "ML"],
+        "duration": 60,
+        "description": "A critical look at the ethical implications of AI and machine learning. We will discuss how to identify and mitigate bias, ensuring fairness and transparency in AI systems."
+    },
+    {
+        "title": "Building Scalable Data Pipelines",
+        "speakers": ["Mr. Arjun Rao"],
+        "categories": ["Data Science"],
+        "duration": 60,
+        "description": "Learn the essentials of designing and implementing robust and scalable data pipelines. This talk will cover tools, architectures, and best practices for handling large datasets."
+    },
+    {
+        "title": "Leveraging AI for Enhanced Customer Experience",
+        "speakers": ["Ms. Sanjana Gupta", "Mr. Dev Sharma"],
+        "categories": ["AI", "Business Intelligence"],
+        "duration": 60,
+        "description": "Discover how AI-driven solutions can transform customer interactions, personalize experiences, and drive customer satisfaction and loyalty."
+    }
+]
