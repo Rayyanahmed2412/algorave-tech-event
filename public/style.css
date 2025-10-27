@@ -90,3 +90,10 @@ h1 {
     margin-top: 15px;
     line-height: 1.6;
 }
+
+.no-results {
+    text-align: center;
+    font-size: 1.2em;
+    color: #8b949e;
+    margin-top: 50px;
+}

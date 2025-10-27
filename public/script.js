@@ -32,6 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderSchedule(talks) {
         scheduleContainer.innerHTML = '';
+
+        if (talks.length === 0) {
+            scheduleContainer.innerHTML = '<div class="no-results">No talks found matching your criteria.</div>';
+            return;
+        }
+
         let currentTime = new Date('2025-10-27T10:00:00');
 
         const formatTime = (date) => {
