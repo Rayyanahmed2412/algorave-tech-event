@@ -24,19 +24,23 @@ h1 {
 
 .search-container {
     margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the search inputs */
+    gap: 10px; /* Space between inputs */
 }
 
-#searchInput {
-    width: 50%;
+#searchInput, #speakerSearchInput {
+    width: 48%; /* Adjust width to fit side-by-side with gap */
     padding: 10px;
     border: 1px solid #30363d;
     border-radius: 6px;
     background-color: #161b22;
     color: #c9d1d9;
     font-size: 1em;
+    margin-right: 10px; /* Add some spacing between the two inputs */
 }
 
-#searchInput:focus {
+#searchInput:focus, #speakerSearchInput:focus {
     outline: none;
     border-color: #58a6ff;
 }

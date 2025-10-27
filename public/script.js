@@ -1,22 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
     const scheduleContainer = document.getElementById('schedule');
     const searchInput = document.getElementById('searchInput');
+    const speakerSearchInput = document.getElementById('speakerSearchInput');
     let allTalks = [];
 
     fetch('/api/talks')
         .then(response => response.json())
         .then(data => {
             allTalks = data;
-            renderSchedule(allTalks);
+            applyFilters(); // Initial render with all talks
         });
 
-    searchInput.addEventListener('input', () => {
-        const searchTerm = searchInput.value.toLowerCase();
-        const filteredTalks = allTalks.filter(talk => 
-            talk.categories.some(category => category.toLowerCase().includes(searchTerm))
-        );
+    const applyFilters = () => {
+        const categorySearchTerm = searchInput.value.toLowerCase();
+        const speakerSearchTerm = speakerSearchInput.value.toLowerCase();
+
+        let filteredTalks = allTalks.filter(talk => {
+            const matchesCategory = talk.categories.some(category => 
+                category.toLowerCase().includes(categorySearchTerm)
+            );
+            const matchesSpeaker = talk.speakers.some(speaker => 
+                speaker.toLowerCase().includes(speakerSearchTerm)
+            );
+            return matchesCategory && matchesSpeaker;
+        });
         renderSchedule(filteredTalks);
-    });
+    };
+
+    searchInput.addEventListener('input', applyFilters);
+    speakerSearchInput.addEventListener('input', applyFilters);
 
     function renderSchedule(talks) {
         scheduleContainer.innerHTML = '';
